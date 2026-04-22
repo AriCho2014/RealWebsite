@@ -8,9 +8,17 @@
 </head>
 <body>
     <header>
-      <h1>Code</h1>
-      <h2><a target="_blank" href="https://colab.research.google.com/drive/1jONqu9gmZgklUZ8SSekHqBLI-4rcz96p">Colab Code</a>
-      </h2>
+      <h1>Decoder Code for Cipher</h1>
+      <h2><a id="link" target="_blank" href="https://colab.research.google.com/drive/1jONqu9gmZgklUZ8SSekHqBLI-4rcz96p">Colab Code</a></h2>
+      <input id="Passcode" type="text" placeholder="What is the password?">
     </header>
-    </body>
+    <script>
+      document.getElementById('Passcode').addEventListener('keyup', function(event) {
+        if (document.getElementById('Passcode').value === '#f') {
+          document.getElementById('link').href = "https://colab.research.google.com/drive/13i88yEMxPREQmC6b7iZuNrgmXgGZDWuM#scrollTo=SagJI4G881-9";
+          // Add your password validation logic here
+        }
+      });
+    </script>
+</body>
 </html>
